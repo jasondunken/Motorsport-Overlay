@@ -8,29 +8,30 @@ HTML based overlay for broadcasting applications that displays a manually updata
 #### and
 ![team logo example](docs/team-logo-example.PNG)
 
-### To display this overlay in OBS
+### To display this overlay in OBS:
 
-- down load the zip file
+- download the zip file
 
 ![step1 image](docs/step1.png)
-- extract to the location of your choice but keep everything in the folder it extracts to
+- extract to the location of your choice, but keep everything in the folder it extracts to
 
 ![step2 image](docs/step2.png)
-- create a Browser Source for your secne in OBS make sure it is on top of the capture source (above it in the list)
+- create a `Browser Source` for your scene in OBS
+- make sure it is on top of the capture source (above it in the list)
 - make sure the layer isn't hidden (click the eye icon to hide/show)
 
 ![step3 image](docs/step3.png)
 - in the settings for the Browser Source click "local file"
-- point OBS to `overlay-list.html` in the overlay folder that was extracted in step two
+- point OBS to `overlay-list.html` in the folder that was extracted in step two
 - set the height and width to the same values as the Base Resolution for the scene
 
 ![step4 image](docs/step4.png)
 - you should see a preview of the overlay in the Browser Source settings panel
-- if not you need to _**uncheck**_ the hardware acceleration box in OBS > settings > advanced settings
+- if not, you need to _**uncheck**_ `Enable Browser Source Hardware Acceleration` in settings > advanced settings > sources
 
 ![step5 image](docs/step5.png)
 
-### to interact with the layer
+### to interact with the layer:
 
 - right click on the Browser Source and choose `interact`
 
@@ -38,6 +39,7 @@ HTML based overlay for broadcasting applications that displays a manually updata
 - a window will open displaying the overlay
 
 ![interact2 image](docs/interact2.png)
+#### in the `Interacting with 'Browser'` window: 
 - clicking on the current lap will increment the lap counter by one lap
 - clicking on the total laps will decrement the lap counter by one lap
 - clicking on a driver's icon will move them up in the order by one
