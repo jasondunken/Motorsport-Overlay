@@ -1,0 +1,51 @@
+/* 2021 BitByteBytes.io */
+#overlay {
+	background-color: #97979744;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+	display: grid;
+	grid-template-columns: 1fr;
+	border-radius: 10px;
+	width: 220px;;
+}
+
+.session,
+#laps {
+	text-align: center;
+	font-size: 1.5em;
+	margin: .5rem 0;
+}
+
+#list-container {
+	display: grid;
+	margin: 0 .5rem;
+}
+
+.driver {
+	display: grid;
+	grid-template-columns: 32px 1fr;
+	grid-gap: .25rem;
+	font-size: 1.5em;
+	align-items: center;
+}
+
+.driver-with-icon {
+	display: grid;
+	grid-template-columns: auto 32px 1fr;
+	grid-gap: .25rem;
+	font-size: 1.5em;
+	align-items: center;
+}
+
+.icon {
+	text-align: center;
+}
+
+.position {
+	text-align: center;
+}
+
+#attribution {
+	text-align: center;
+	width: 100%;
+	margin: .5rem 0;
+}
