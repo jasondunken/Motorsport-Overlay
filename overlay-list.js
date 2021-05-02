@@ -46,8 +46,10 @@ function updateList() {
 	
 	let html = '';
 	for (let driver of drivers) {
-		html += `<div class="driver"><div class="icon" style="background-color: ${driver.color}" onClick="moveDriverUp('${driver.name}')">${drivers.indexOf(driver) + 1}</div><div onClick="moveDriverDown('${driver.name}')">${driver.lastName}</div></div>`;
-		// html += `<div class="driver-with-icon"><img src="${driver.icon}" width="32" height="32" onClick="moveDriverUp('${driver.name}')"/><div class="position">${drivers.indexOf(driver) + 1}</div><div onClick="moveDriverDown('${driver.name}')">${driver.lastName}</div></div>`
+		// driver with team color icon containing overall position then driver last name
+		// html += `<div class="driver"><div class="icon" style="background-color: ${driver.color}" onClick="moveDriverUp('${driver.name}')">${drivers.indexOf(driver) + 1}</div><div onClick="moveDriverDown('${driver.name}')">${driver.lastName}</div></div>`;
+		// driver with team logo icon then overall position then last name
+		html += `<div class="driver-with-icon"><img src="${driver.icon}" width="32" height="32" onClick="moveDriverUp('${driver.name}')"/><div class="position">${drivers.indexOf(driver) + 1}</div><div onClick="moveDriverDown('${driver.name}')">${driver.lastName}</div></div>`
 	}
 	listContainer.innerHTML = html;
 }
