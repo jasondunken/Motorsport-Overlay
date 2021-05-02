@@ -1,7 +1,7 @@
 # Motorsport-Overlay
 HTML based overlay for broadcasting applications that displays a manually updatable lap counter and driver position list.
 
-### Developed and tested with OBS 26.1.1 (64bit)
+### Developed and tested with [OBS](https://obsproject.com) 26.1.1 (64bit)
 
 #### There are currently two variations
 ![team color example](docs/team-color-example.PNG)
