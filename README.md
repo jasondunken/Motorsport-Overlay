@@ -15,25 +15,27 @@ HTML based overlay for broadcasting applications that displays a manually updata
 ![step1 image](docs/step1.png)
 - extract to the location of your choice, but keep everything in the folder it extracts to
 
+  (you can delete the docs folder and readme.md, they aren't required, but the three files and the assets folder need to stay where they are)
+
 ![step2 image](docs/step2.png)
 - create a `Browser Source` for your scene in OBS
 - make sure it is on top of the capture source (above it in the list)
 - make sure the layer isn't hidden (click the eye icon to hide/show)
 
 ![step3 image](docs/step3.png)
-- in the settings for the Browser Source click "local file"
+- in the settings for the `Browser Source` click `Local file`
 - point OBS to `overlay-list.html` in the folder that was extracted in step two
-- set the height and width to the same values as the Base Resolution for the scene
+- set the `height` and `width` to the same values as the `Base Resolution` for the scene
 
 ![step4 image](docs/step4.png)
-- you should see a preview of the overlay in the Browser Source settings panel
-- if not, you need to _**uncheck**_ `Enable Browser Source Hardware Acceleration` in settings > advanced settings > sources
+- you should see a preview of the overlay in the `Browser Source` properties panel
+- if not, you need to _**uncheck**_ `Enable Browser Source Hardware Acceleration` in `Settings` > `Advanced Settings` > `Sources`
 
 ![step5 image](docs/step5.png)
 
-### to interact with the layer:
+### to interact with the overlay:
 
-- right click on the Browser Source and choose `interact`
+- right click on the `Browser Source` and choose `Interact`
 
 ![interact1 image](docs/interact1.png)
 - a window will open displaying the overlay
