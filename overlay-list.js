@@ -55,34 +55,32 @@ function updateList() {
 }
 
 function moveDriverUp(name) {
-	let d;
-	drivers.find((driver) => {
-		if (name === driver.name) {
-			d = driver;
-		}
-	})
-	const driverPos = drivers.indexOf(d);
+	const oldPos = getDriverPos(name);
 	const newPos = driverPos - 1;
 	if (newPos < 0) return;
-	const temp = drivers[newPos];
-	drivers[newPos] = drivers[driverPos];
-	drivers[driverPos] = temp;
-	updateList();
+	swapDrivers(oldPos, newPos);
 }
 
 function moveDriverDown(name) {
-	let d;
+	const oldPos = getDriverPos(name);
+	const newPos = driverPos + 1;
+	if (newPos > drivers.length - 1) return;
+	swapDrivers(oldPos, newPos);
+}
+
+function getDriverPos(name) {let d;
 	drivers.find((driver) => {
 		if (name === driver.name) {
 			d = driver;
 		}
 	})
-	const driverPos = drivers.indexOf(d);
-	const newPos = driverPos + 1;
-	if (newPos > drivers.length - 1) return;
+	return driverPos = drivers.indexOf(d);
+}
+
+function swapDrivers(oldPos, newPos) {
 	const temp = drivers[newPos];
-	drivers[newPos] = drivers[driverPos];
-	drivers[driverPos] = temp;
+	drivers[newPos] = drivers[oldPos];
+	drivers[oldPos] = temp;
 	updateList();
 }
 
