@@ -3,12 +3,12 @@ HTML based overlay for broadcasting applications that displays a manually updata
 
 ### Developed and tested with OBS 26.1.1 (64bit)
 
-### There are currently two variations
+#### There are currently two variations
 ![team color example](docs/team-color-example.PNG)
-### and
+#### and
 ![team logo example](docs/team-logo-example.PNG)
 
-#### To display this overlay in OBS
+### To display this overlay in OBS
 
 - down load the zip file
 
@@ -29,3 +29,16 @@ HTML based overlay for broadcasting applications that displays a manually updata
 - if not you need to _**uncheck**_ the hardware acceleration box in OBS > settings > advanced settings
 
 ![step5 image](docs/step5.png)
+
+### to interact with the layer
+
+- right click on the Browser Source and choose `interact`
+
+![interact1 image](docs/interact1.png)
+- a window will open displaying the overlay
+
+![interact2 image](docs/interact2.png)
+- clicking on the current lap will increment the lap counter by one lap
+- clicking on the total laps will decrement the lap counter by one lap
+- clicking on a driver's icon will move them up in the order by one
+- clicking on a driver's name will move them down in the order by one
